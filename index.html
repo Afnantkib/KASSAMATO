@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassamato | The best online food delivery website </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+body{
+    background-color: #f0f2f5;
+}
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    #navbar::before {
+        content: " ";
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    #logo {
+        height: 96px;
+        margin: 14px 22px;
+    }
+
+    #logo img {
+        height: 80px;
+        margin: 2px 2px;
+        border-radius: 17px;
+        cursor: pointer;
+    }
+    #logo img:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        
+    }
+
+    ul {
+        display: flex;
+        position: relative;
+        bottom: 2px;
+    }
+
+    ul li {
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    ul li a {
+        display: block;
+        border-radius: 17px;
+        padding: 0px 15px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 1.2rem;
+    }
+
+    ul li a:hover {
+
+        background-color: rgb(245, 92, 92);
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 200px;
+        align-items: center;
+        height: 160px;
+    }
+
+    #home::before {
+        background: url(img/spaghetti-1932466_1920.jpg) no-repeat center center/cover;
+        content: " ";
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        top: 1px;
+        z-index: -1;
+        opacity: 0.86;
+    }
+
+    #home h1 {
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #home p {
+        text-align: center;
+        color: white;
+        font-size: 1.1rem;
+        font-family: 'Bree Serif', serif;
+
+    }
+
+    .btn {
+        padding: 3px 4px;
+        border: 2px solid rgb(184, 70, 70);
+        border-radius: 10px;
+        background: brown;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        margin: 16px;
+        
+
+    }
+
+    .btn:hover {
+        background: rgb(190, 84, 84);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+    }
+
+    /* Services Container */
+
+
+    #services {
+        margin: 34px 0px;
+        display: flex;
+        width: 100%;
+
+    }
+
+    #services .box {
+        border:none;
+        background-color: white;
+        border-radius: 15px;
+        margin: 20px;
+        padding: 25px;
+        cursor: pointer;
+       
+        font-family: 'Bree Serif', serif;
+       
+    }
+    #services .box:hover {
+        border:none;
+        background-color: white;
+        border-radius: 15px;
+        margin: 20px;
+        padding: 25px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+        font-family: 'Bree Serif', serif;
+       
+    }
+
+    #services .box img {
+        display: block;
+        margin: auto;
+        height: 250px;
+    }
+
+    .primary2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 23px;
+        padding: 13px 0px;
+        margin: 23px 550px 0px 550px;
+        background-color: white;
+        color: black;
+        border-radius: 22px;
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .primary2:hover {
+      
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+    }
+
+    .primary1 {
+        text-align: center;
+        background-color: white;
+        align-items: center;
+        border-radius: 22px;
+    }
+
+
+   #logos{
+        display: flex;
+    
+       justify-content: center;
+      
+       
+    }
+    #account h1{     padding: 5px 5px;
+    margin: 5px 589px;
+    cursor: pointer;
+    }
+    #account h1:hover{     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    }
+   #logos img{
+       height: 43px;
+       margin: 4px  20px 40px;
+       margin-top: 38px;
+       padding: 3px 10px;
+       background-color: white;
+       border-radius: 15px;
+       
+    }
+   #logos img:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    }
+#contactbox input, #contactbox textarea{ width: 100%;
+padding: 0.5em;
+
+}
+  #contactbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 34px;
+  }
+ #contact{position: relative;
+     
+    }
+    #contact::before{ content: " ";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 1px;
+        z-index: -1;
+        opacity: 0.86;
+        background: url(img/123.jpg) no-repeat center center/cover  ;
+
+    }
+
+  
+    .centre {
+        text-align: center;
+
+    }
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.PNG" alt="www.kassamato.com">
+        </div>
+        <div>
+            <ul>
+                <li class="items"><a href="/">Home</a></li>
+                <li class="items"><a href="/services">Services</a></li>
+                <li class="items"><a href="/about">About Us</a></li>
+                <li class="items"><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class="primary">Welcome to KassaMato</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia esse veritatis eveniet aspernatur aliquam
+        </p>
+        <button class="btn">Order Now</button>
+    </section>
+    <br>
+    <h1 class="primary2 centre">
+        Our Services
+    </h1>
+    <section id="services">
+
+        <div class="box">
+            <img src="img/kai-pilger-tL92LY152Sk-unsplash.jpg" alt="reload">
+            <h2 class="secondary centre">Food Ordering</h2>
+            <p class="text centre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi iusto, placeat,
+                earum doloribus
+                exercitationem adipisci nihil quasi nulla amet libero quos. Dolorem esse qui incidunt nesciunt minus
+                accusamus in!</p>
+        </div>
+        <div class="box">
+            <img src="img/ikhsan-baihaqi-dXeBXaThv4U-unsplash.jpg" alt="reload">
+            <h2 class="secondary centre">Bulk Ordering</h2>
+            <p class="text centre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi iusto, placeat,
+                earum doloribus
+                exercitationem adipisci nihil quasi nulla amet libero quos. Dolorem esse qui incidunt nesciunt minus
+                accusamus in!</p>
+        </div>
+        <div class="box">
+            <img src="img/emmanuel-zua-eDG8gsiqkyI-unsplash.jpg" alt="reload">
+            <h2 class="secondary centre">Food Catering</h2>
+            <p class="text centre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi iusto, placeat,
+                earum doloribus
+                exercitationem adipisci nihil quasi nulla amet libero quos. Dolorem esse qui incidunt nesciunt minus
+                accusamus in!</p>
+        </div>
+    </section>
+    <section id="account">
+        <div>
+            <h1 class="primary1 center">
+                Log In Via
+            </h1>
+        </div> <div id="logos">
+        <div class="logo2"><a href="https://skype.com"><img src="img/254-2544013_clip-art-png-transparent-svg-vector-skype-black.png" alt=""></a></div>
+        <div class="logo1"><a href="https://facebook.com"><img src="img/42-426977_fb-icon-facebook-logo-white-background.png" alt=""></a></div>
+        <div class="logo3"> <a href="https://google.com>"><img src="img/images.png" alt=""></a></div></div></section></div>
+    </section>
+    <section id="contact">
+        <h1 class="primary2">Contact Us</h1>
+        <div id="contactbox"> 
+            <form action="">
+                <div class="formgroup">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email:</label>:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="formgroup">
+                    <label for="phone">Phone Number:</label>
+                    <input type= "phone" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="formgroup">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
